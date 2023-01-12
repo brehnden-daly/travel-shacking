@@ -3,7 +3,7 @@ import Styles from '../Styling';
 
 const icon = require('../assets/adaptive-icon.png');
 
-export default function AUTH() {
+export default function LANDING() {
   return (
     <SafeAreaView style={Styles.spaciousContainer}>
       {/* <Text>Open up App.tsx to start working on your app!</Text>

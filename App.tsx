@@ -1,13 +1,13 @@
 import { Text, SafeAreaView, View, Button, Image } from 'react-native';
 import Styles from './Styling';
 
-import AUTH from './Views/Auth';
+import LANDING from './Views/Landing';
 
 export default function App() {
   return (
 
-    <AUTH></AUTH>
-    
+    <LANDING></LANDING>
+
   );
 }
 
