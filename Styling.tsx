@@ -1,14 +1,17 @@
 import { StyleSheet } from 'react-native';
 
 const Styles = StyleSheet.create({
-  spaciousContainer: {
+  landingContainer: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    backgroundColor: '#88b7b5',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     gap: 25,
-    marginHorizontal: 32,
-    marginVertical: 16
+    height: '100%',
+    width: '100%',
+    marginHorizontal: 0,
+    marginVertical: 0
   },
 
   tightContainer: {
@@ -34,11 +37,11 @@ const Styles = StyleSheet.create({
   },
 
   primaryButton: {
-    color: "#88B7B5",
+    color: "#88B7B5"
   },
 
   secondaryButton: {
-    color: "#2C4251",
+    color: "#2C4251"
   }
 });
 
