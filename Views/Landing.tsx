@@ -6,10 +6,11 @@ const icon = require('../assets/adaptive-icon.png');
 
 export default function LANDING() {
 
-  const [optimizeLabels, setOptimizeLabels] = useState( ["spending...          ", "credit cards...          ", "points usage...          "] );
+  const [optimizeLabels, setOptimizeLabels] = useState( ["getting points...             ", "using points...             "] );
   const [currLabel, setCurrLabel] = useState(0);
   const [currIndex, setCurrIndex] = useState(0);
 
+  
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,7 +34,7 @@ export default function LANDING() {
         <View style={{flex: 1, flexDirection: 'column-reverse'}}>
           <Text style={{textAlign: 'right', fontSize: 18, fontFamily: 'courier', fontWeight: 'bold'}}>Optimize </Text>
         </View>
-        <View style={{flex: 1.15, flexDirection: 'column-reverse'}}>
+        <View style={{flex: 1.35, flexDirection: 'column-reverse'}}>
           <Text style={{textAlign: 'left', fontSize: 18, fontFamily: 'courier', fontWeight: 'bold'}}>{optimizeLabels[currLabel].slice(0,currIndex)}</Text>
         </View>
         
