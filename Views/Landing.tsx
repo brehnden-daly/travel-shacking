@@ -1,10 +1,18 @@
 import { Text, SafeAreaView, View, Button, Image } from 'react-native';
-import {useState, useEffect, useRef} from 'react';
+import {useState, useEffect} from 'react';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+
 import Styles from '../Styling';
+import { StackParams } from '../Navigation/navigation_stack_params';
 
 const icon = require('../assets/adaptive-icon.png');
 
-export default function LANDING() {
+
+
+
+type Props = NativeStackScreenProps<StackParams>;
+
+export default function LANDING({navigation}: Props) {
 
   const [optimizeLabels, setOptimizeLabels] = useState( ["getting points...             ", "using points...             "] );
   const [currLabel, setCurrLabel] = useState(0);
@@ -30,7 +38,6 @@ export default function LANDING() {
       </View>
 
       <View style={{flex: 1, flexDirection: 'row'}}>
-        {/* Add typing animations to transition between optimization words */}
         <View style={{flex: 1, flexDirection: 'column-reverse'}}>
           <Text style={{textAlign: 'right', fontSize: 18, fontFamily: 'courier', fontWeight: 'bold'}}>Optimize </Text>
         </View>
@@ -41,8 +48,8 @@ export default function LANDING() {
       </View>
 
       <View style={{flex: 2, width:"50%", maxWidth:300, alignSelf: 'center', alignItems: 'stretch', justifyContent: 'space-evenly'}}>
-        <Button color={Styles.secondaryButton.color} title="sign up"></Button>
-        <Button color={Styles.secondaryButton.color} title="log in"></Button>
+        <Button color={Styles.secondaryButton.color} title="sign up" onPress={() => navigation.navigate('Signup')}></Button>
+        <Button color={Styles.secondaryButton.color} title="log in" onPress={() => navigation.navigate('Login')}></Button>
       </View>
 
     </SafeAreaView>
