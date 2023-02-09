@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Styles from './Styling';
+// import Styles from './Styling';
 import { StackParams } from './Navigation/navigation_stack_params';
 
 import LANDING from './Views/Landing';

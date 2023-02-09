@@ -31,7 +31,7 @@ export default function LANDING({navigation}: Props) {
 
 
   return (
-    <SafeAreaView style={Styles.landingContainer}>
+    <SafeAreaView style={Styles.generalContainer}>
 
       <View style={{flex: 3, flexDirection: 'column-reverse'}}>
         <Image style={{height: "200px", width: "200px", alignSelf: 'center', borderRadius:50, overflow: 'hidden'}} source={require('../assets/prototype_logos/logo_1.png')}></Image>

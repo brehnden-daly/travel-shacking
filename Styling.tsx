@@ -1,12 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 const Styles = StyleSheet.create({
-  landingContainer: {
+  generalContainer: {
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#88b7b5',
-    // alignItems: 'center',
-    // justifyContent: 'center',
     gap: 25,
     height: '100%',
     width: '100%',
@@ -34,6 +32,18 @@ const Styles = StyleSheet.create({
     fontFamily: 'courier',
     fontWeight: 'normal',
     textAlign: 'left'
+  },
+
+  textInputGeneral: {
+    fontSize: 14,
+    fontFamily: 'courier',
+    fontWeight: 'bold',
+    textAlign: 'left',
+    backgroundColor: '#FFFFFF',
+    color: '#2C4251',
+    height: 35,
+    borderRadius: 10,
+    padding: 10
   },
 
   primaryButton: {
